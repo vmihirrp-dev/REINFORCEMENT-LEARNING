@@ -1,0 +1,57 @@
+RL LAB ASSIGNMENT 3
+5-State GridWorld
+============================================================
+
+ENVIRONMENT
+------------------------------------------------------------
+States: S1, S2, S3, S4, S5
+Start State: S1
+Goal/Terminal State: S5
+Actions: Left, Right, Down, Up
+Goal Reward: 1
+Other Rewards: 0
+Discount Factor: 0.9
+
+POLICY EVALUATION
+------------------------------------------------------------
+Iteration 1: Delta = 1.0000000000
+Iteration 2: Delta = 0.9000000000
+Iteration 3: Delta = 0.8100000000
+Iteration 4: Delta = 0.7290000000
+Iteration 5: Delta = 0.0000000000
+
+Final Values:
+S1: 0.729000
+S2: 0.810000
+S3: 1.000000
+S4: 0.900000
+S5: 0.000000
+
+VALUE ITERATION
+------------------------------------------------------------
+S1: Action = v, Value = 0.900000
+S2: Action = <, v, Value = 0.810000
+S3: Action = v, Value = 1.000000
+S4: Action = <, Value = 0.900000
+S5: Action = Terminal, Value = 0.000000
+
+POLICY COMPARISON
+------------------------------------------------------------
+
+random
+Path: S1 -> S1 -> S1 -> S3 -> S4 -> S4 -> S2 -> S1 -> S3 -> S3 -> S3 -> S5
+Path Length: 11
+Total Reward: 1.000
+Goal Reached: True
+
+evaluated
+Path: S1 -> S2 -> S4 -> S3 -> S5
+Path Length: 4
+Total Reward: 1.000
+Goal Reached: True
+
+optimal
+Path: S1 -> S3 -> S5
+Path Length: 2
+Total Reward: 1.000
+Goal Reached: True
